@@ -1,0 +1,74 @@
+[
+  {
+    "id": "box_1",
+    "x": 20,
+    "y": 20,
+    "color-hex": "#4ab471",
+    "dataSource": "data_1",
+    "speed-msec": 6000
+  },
+  {
+    "id": "box_2_1",
+    "x": 20,
+    "y": 80,
+    "color-hex": "#7d97e0",
+    "dataSource": "data_2_1",
+    "speed-msec": 5000
+  },
+  {
+    "id": "box_2_2",
+    "x": 120,
+    "y": 140,
+    "color-hex": "#b4694a",
+    "dataSource": "data_2_2",
+    "speed-msec": 4000
+  },
+  {
+    "id": "box_2_3",
+    "x": 220,
+    "y": 180,
+    "color-hex": "#e07a7d",
+    "dataSource": "data_2_3",
+    "speed-msec": 5500
+  },
+  {
+    "id": "box_3_1",
+    "x": 20,
+    "y": 220,
+    "color-hex": "#4ab471",
+    "dataSource": "data_3_1",
+    "speed-msec": 3000
+  },
+  {
+    "id": "box_3_2",
+    "x": 120,
+    "y": 280,
+    "color-hex": "#7d97e0",
+    "dataSource": "data_3_2",
+    "speed-msec": 4500
+  },
+  {
+    "id": "box_3_3",
+    "x": 220,
+    "y": 330,
+    "color-hex": "#b4694a",
+    "dataSource": "data_3_3",
+    "speed-msec": 6000
+  },
+  {
+    "id": "box_3_4",
+    "x": 320,
+    "y": 380,
+    "color-hex": "#e07a7d",
+    "dataSource": "data_3_4",
+    "speed-msec": 5000
+  },
+  {
+    "id": "box_3_5",
+    "x": 420,
+    "y": 180,
+    "color-hex": "#7dd4a9",
+    "dataSource": "data_3_5",
+    "speed-msec": 3500
+  }
+]
