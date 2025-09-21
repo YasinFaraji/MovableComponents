@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/assets/qml">
+        <file>main.qml</file>
+        <file>DataRectangle.qml</file>
+    </qresource>
+</RCC>
