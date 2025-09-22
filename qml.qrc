@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>View/main.qml</file>
+        <file>View/DataRectangle.qml</file>
+        <file>UiCore/AppStyle.qml</file>
+    </qresource>
+</RCC>
