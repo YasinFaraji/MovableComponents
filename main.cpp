@@ -1,5 +1,5 @@
-#include "DataGenerator.h"
-#include "MainController.h"
+#include "Core/DataGenerator.h"
+#include "Core/MainController.h"
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
@@ -18,7 +18,9 @@ int main(int argc, char* argv[])
     engine.rootContext()->setContextProperty("mainController", &mainController);
     engine.rootContext()->setContextProperty("dataGenerators", mainController.dataGenerators());
 
-    const QUrl url(QStringLiteral("qrc:/assets/qml/main.qml"));
+    qmlRegisterSingletonType(QUrl("qrc:/UiCore/AppStyle.qml"), "MovableComponents.UiCore", 1, 0, "AppStyle");
+
+    const QUrl url(QStringLiteral("qrc:/View/main.qml"));
     engine.load(url);
 
     if (engine.rootObjects().isEmpty())
