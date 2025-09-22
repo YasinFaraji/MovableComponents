@@ -16,19 +16,18 @@ find_package(Qt5 COMPONENTS Core Qml Quick REQUIRED)
 if(ANDROID)
     add_library(MovableComponents SHARED
       main.cpp
-      DataGenerator.h
-      DataGenerator.cpp
-      MainController.h
-      MainController.cpp
-      qml.qrc
+      Core/DataGenerator.h
+      Core/DataGenerator.cpp
+      Core/MainController.h
+      Core/MainController.cpp
     )
 else()
     add_executable(MovableComponents
       main.cpp
-      DataGenerator.h
-      DataGenerator.cpp
-      MainController.h
-      MainController.cpp
+      Core/DataGenerator.h
+      Core/DataGenerator.cpp
+      Core/MainController.h
+      Core/MainController.cpp
     )
 endif()
 
@@ -38,7 +37,7 @@ target_compile_definitions(MovableComponents
 target_link_libraries(MovableComponents
   PRIVATE Qt5::Core Qt5::Qml Qt5::Quick)
 
-qt5_add_resources(QML_RESOURCES assets/qml/qml.qrc)
+qt5_add_resources(QML_RESOURCES qml.qrc)
 qt5_add_resources(CONFIG_RESOURCES assets/config/config.qrc)
 
 target_sources(${PROJECT_NAME} PRIVATE ${QML_RESOURCES} ${CONFIG_RESOURCES})
