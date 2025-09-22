@@ -1,12 +1,13 @@
 import QtQuick 2.14
 import QtQuick.Window 2.14
 import com.mycompany.components 1.0
+import MovableComponents.UiCore 1.0
 
 Window {
-    width: 880
-    height: 540
+    width: AppStyle.mainWindowWidth
+    height: AppStyle.mainWindowHeight
     visible: true
-    title: "MovableComponents"
+    title: AppStyle.mainWindowTitleName
 
     id: window
 
@@ -20,7 +21,7 @@ Window {
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             width: parent.width / 2
-            color: "gray"
+            color: AppStyle.mainWindowLeftColor
         }
 
         Rectangle {
@@ -29,7 +30,7 @@ Window {
             anchors.top: parent.top
             anchors.bottom: parent.bottom
             width: parent.width / 2
-            color: "#FF4040"
+            color: AppStyle.mainWindowRightColor
         }
     }
 
@@ -44,14 +45,14 @@ Window {
             id: rectComponent
             x: modelData.x
             y: modelData.y
-            width: 110
-            height: 50
+            width: AppStyle.componentWidth
+            height: AppStyle.componentHeight
             color: modelData["color-hex"]
 
             property string dataSourceId: modelData.dataSource
             property var dataObject: dataGenerators.find(obj => obj.id === dataSourceId)
 
-            text: rectComponent.x + width < window.width / 2 ? (dataObject ? dataObject.value : "xxxxx") : "xxxxx"
+            text: rectComponent.x + width < window.width / 2 ? (dataObject ? modelData["id"] + ": " + dataObject.value : "xxxxx") : "xxxxx"
 
             SequentialAnimation on x {
                 id : animationController
