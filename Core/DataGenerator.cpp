@@ -1,4 +1,4 @@
-#include "DataGenerator.h"
+#include "Core/DataGenerator.h"
 #include <QDebug>
 
 DataGenerator::DataGenerator(QObject* parent)
