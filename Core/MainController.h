@@ -1,7 +1,7 @@
 #ifndef MAINCONTROLLER_H
 #define MAINCONTROLLER_H
 
-#include "DataGenerator.h"
+#include "Core/DataGenerator.h"
 #include <QFile>
 #include <QHash>
 #include <QObject>

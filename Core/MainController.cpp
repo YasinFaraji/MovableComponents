@@ -1,4 +1,5 @@
-#include "MainController.h"
+#include "Core/MainController.h"
+
 #include <QDebug>
 #include <QDir>
 #include <QJsonArray>
